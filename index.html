@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Starbuck</title>
+</head>
+<body>
+    <section>
+        <div class="circulo"></div>
+        <header>
+            <a href="#"><img src="images/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Que Hay</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </header>
+        <div class="container">
+            <div class="texto">
+                <h2>No es solo Cafe<br>Es <span>Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, culpa facere deleniti error tenetur exercitationem repellat, amet reiciendis, maiores quo quisquam blanditiis aliquid rem. Ipsum dolor repellat rerum quis aperiam?
+                </p>
+                <a href="#">Aprende Mas</a>
+            </div>
+            <div class="img">
+                <img src="images/img1.png" class="star">
+            </div>
+        </div>
+        <ul class="tum">
+            <li><img src="images/thumb1.png"onclick="imgSlider(`images/img1.png`)"></li>
+            <li><img src="images/thumb2.png" onclick="imgSlider(`images/img2.png`)" ></li>
+            <li><img src="images/thumb3.png" onclick="imgSlider(`images/img3.png`)"></li>
+        </ul>
+        <ul class="tam">
+            <li><a href="#"><img src="images/facebook.png"></a></li>
+            <li><a href="#"><img src="images/twitter.png"></a></li>
+            <li><a href="#"><img src="images/instagram.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+   function imgSlider(anything){
+       document.querySelector(`.star`).src = anything;
+   } 
+    </script>
+</body>
+</html>
